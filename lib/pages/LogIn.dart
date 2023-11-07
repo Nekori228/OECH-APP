@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'ForgotPassword.dart';
+import 'Home.dart';
 import 'SignUp.dart';
 
 class LogIn extends StatefulWidget {
@@ -195,12 +196,12 @@ class _LogInState extends State<LogIn> {
                     height: 47,
                     child: GestureDetector(
                       onTap: () {
-                        // Navigator.pushReplacement(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => Log_in(),
-                        //   ),
-                        // );
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Home(),
+                          ),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
