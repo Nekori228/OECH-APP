@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'SignUp.dart';
+
 class Onboarding extends StatelessWidget {
   const Onboarding({Key? key}) : super(key: key);
 
@@ -119,12 +121,12 @@ class _CarouselState extends State<Carousel> {
                     width: 65,
                     child: GestureDetector(
                       onTap: () {
-                        // Navigator.pushReplacement(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => Sign_up(),
-                        //   ),
-                        // );
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUp(),
+                          ),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -155,12 +157,12 @@ class _CarouselState extends State<Carousel> {
                   height: 47,
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => Sign_up(),
-                      //   ),
-                      // );
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUp(),
+                        ),
+                      );
                     },
                     child: Container(
                       decoration: BoxDecoration(
