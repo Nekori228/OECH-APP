@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'ForgotPassword.dart';
 import 'SignUp.dart';
 
 class LogIn extends StatefulWidget {
@@ -162,12 +163,12 @@ class _LogInState extends State<LogIn> {
                   Spacer(),
                   TextButton(
                     onPressed: () {
-                      // Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => ForgotPassword(),
-                      //   ),
-                      // );
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ForgotPassword(),
+                        ),
+                      );
                     },
                     child: Text(
                       'Forgot Password?',
