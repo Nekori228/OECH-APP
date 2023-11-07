@@ -98,7 +98,7 @@ class ForgotPassword extends StatelessWidget {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => OTPVerification(),
+                              builder: (context) => OTPVerification(number: '',),
                             ),
                           );
                         } else {
